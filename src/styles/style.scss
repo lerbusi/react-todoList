@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  //斜線版背景
+  // background: repeating-linear-gradient(
+  //     -45deg,
+  //     #fff,
+  //     #fff 25px,
+  //     #e2edc1 25px,
+  //     #e2edc1 50px
+  //   )
+  // fixed;
+  background: linear-gradient(to top, #3a318c, #f2b2d8) fixed;
+}
+
+.app {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.TodoInput {
+  margin: 12px;
+}
+
+.content {
+  color: #ffffff;
+  font-size: 1.75rem;
+}

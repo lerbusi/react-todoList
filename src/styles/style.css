@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: linear-gradient(to top, #3a318c, #f2b2d8) fixed;
+}
+
+.app {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.TodoInput {
+  margin: 12px;
+}
+
+.content {
+  color: #ffffff;
+  font-size: 1.75rem;
+}/*# sourceMappingURL=style.css.map */
