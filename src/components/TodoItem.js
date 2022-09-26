@@ -11,7 +11,13 @@ const TodoItem = ({
     <div className="todolist">
       <div className="ui big aligned animated selection list">
         <div className="item">
-          <div className="left aligned content">
+          <div
+            className="left aligned content"
+            style={{
+              textDecoration: item.complete ? "line-through" : "",
+              color: item.complete ? "#aeacba" : "",
+            }}
+          >
             {item.todo}
             <button
               className="ui right floated icon button"
