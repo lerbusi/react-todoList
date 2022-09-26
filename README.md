@@ -1,4 +1,4 @@
-# react-todoList changes
+# react todo List
 
  practice for react hooks and localstorage
  by Lerbusi @ github
