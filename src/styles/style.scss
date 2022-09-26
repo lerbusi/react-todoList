@@ -27,10 +27,28 @@ body {
 }
 
 .TodoInput {
-  margin: 12px;
+  padding: 0.5rem;
 }
 
 .content {
-  color: #ffffff;
+  color: #68638f;
   font-size: 1.75rem;
+}
+
+.border {
+  margin: 1rem;
+  padding: 0.5rem;
+  background: rgb(255, 255, 255);
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px #68638f;
+}
+
+.noBorder {
+  margin: 1rem;
+  padding: 0.5rem;
+  // background: rgb(255, 255, 255);
+  // border: 1px solid;
+  // border-radius: 15px;
+  // box-shadow: 0px 8px 24px #68638f;
 }

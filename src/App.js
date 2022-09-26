@@ -5,11 +5,11 @@ import "./styles/style.css";
 
 const App = () => {
   //內建items test用
-  //   const [todoItems, setTodoItems] = useState([
-  //     { todo: "第1件事", complete: false },
-  //     { todo: "第2件事", complete: false },
-  //     { todo: "第3件事", complete: false },
-  //   ]);
+  // const [todoItems, setTodoItems] = useState([
+  //   { todo: "第1件事", complete: false },
+  //   { todo: "第2件事", complete: false },
+  //   { todo: "第3件事", complete: false },
+  // ]);
 
   const [todoItems, setTodoItems] = useState(() => {
     const savedTodos = localStorage.getItem("todoItems");
@@ -67,23 +67,32 @@ const App = () => {
     localStorage.setItem("todoItems", JSON.stringify(todoItems));
   }, [todoItems]);
 
-  //
+  const checkItems = (todoItems) => {
+    if (todoItems) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
   return (
     <div className="app">
       <h1>To Do List</h1>
       <br />
       <TodoInput createTodoItem={createTodoItem} />
-      {todoItems.map((item, index) => (
-        <TodoItem
-          key={index}
-          index={index}
-          item={item}
-          deleteTodoItem={deleteTodoItem}
-          completeTodoItem={completeTodoItem}
-          updateTodoItem={updateTodoItem}
-        />
-      ))}
+      <div className="border" style={{ textAlign: "center" }}>
+        <h2 style={{ color: "#68638f", padding: "1rem" }}>代辦事項</h2>
+        {todoItems.map((item, index) => (
+          <TodoItem
+            key={index}
+            index={index}
+            item={item}
+            deleteTodoItem={deleteTodoItem}
+            completeTodoItem={completeTodoItem}
+            updateTodoItem={updateTodoItem}
+          />
+        ))}
+      </div>
     </div>
   );
 };
