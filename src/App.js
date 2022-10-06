@@ -81,7 +81,7 @@ const App = () => {
       <br />
       <TodoInput createTodoItem={createTodoItem} />
       <div className="border" style={{ textAlign: "center" }}>
-        <h2 style={{ color: "#68638f", padding: "1rem" }}>代辦事項</h2>
+        <h2 style={{ color: "#68638f", padding: "1rem" }}>待辦事項</h2>
         {todoItems.map((item, index) => (
           <TodoItem
             key={index}
