@@ -25,7 +25,7 @@ const TodoInput = ({ createTodoItem }) => {
             }}
           />
           <button className="ui button" onClick={handleSubmit}>
-            建立新代辦事項
+            建立新待辦事項
           </button>
         </div>
       </form>
